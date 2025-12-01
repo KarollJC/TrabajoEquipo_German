@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mi Autobiografía</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <h1 id="nombre">Francisco Emiliano Guzman Martinez</h1>
+            <!-- Si quieres poner una foto, reemplaza el src por la ruta de tu imagen -->
+            <img id="foto" src="img/IMG_6457.JPEG" alt="Foto (opcional)" hidden>
+        </div>
+    </header>
+
+    <main class="contenido">
+        <section class="seccion" id="introduccion">
+            <h2>Introducción</h2>
+            <p>Tengo 17 años</p>
+        </section>
+
+        <section class="seccion" id="infancia">
+            <h2>familia</h2>
+            <p>vivo con mis pabres mi hermana, un perro</p>
+        </section>
+
+        <section class="seccion" id="educacion">
+            <h2>Educación</h2>
+            <p>estudio en el cbtis217 en la carera de pogramacion</p>
+        </section>
+
+        <section class="seccion" id="intereses">
+            <h2>pasatiempos</h2>
+            <p>dibujar y jugar video juegos</p>
+        </section>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="anio"></span> <!-- Tu nombre o texto breve --></p>
+    </footer>
+
+    <script>
+        // pequeño script para mostrar año actual y controlar visibilidad de la foto si hay src
+        document.getElementById('anio').textContent = new Date().getFullYear();
+        const foto = document.getElementById('foto');
+        if (foto.src && foto.src.trim() !== '') {
+            foto.removeAttribute('hidden');
+        }
+    </script>
+</body>
+</html>
