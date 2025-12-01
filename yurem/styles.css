@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+    padding: 10px;
+}
+hr{
+    border: 2px solid red;
+    width: 750px;
+}
+div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 40px;
+}
+div img{
+    width: 250px;
+    border-radius: 8px;
+}
+p{
+    font-size: 17px;
+}
+h1{
+    padding: 30px;
+}
